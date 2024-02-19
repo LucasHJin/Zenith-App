@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Seated-Hip-Abduction-Machine_600x600-ezgif.com-webp-to-jpg-converter.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

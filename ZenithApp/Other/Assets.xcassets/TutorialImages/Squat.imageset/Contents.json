@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Squat_d752e42d-02ba-4692-b300-c6e67ad5a4f5_600x600-ezgif.com-webp-to-jpg-converter.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Lying-Leg-Curl_203153d8-79dd-4bb9-9125-708aa4327107_600x600-ezgif.com-webp-to-jpg-converter.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

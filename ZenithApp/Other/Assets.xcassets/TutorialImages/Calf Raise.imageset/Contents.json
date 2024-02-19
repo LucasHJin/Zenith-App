@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Standing-Calf-Raise_61746b47-98aa-49ee-bb97-5a19562592b9_600x600-ezgif.com-webp-to-jpg-converter.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
