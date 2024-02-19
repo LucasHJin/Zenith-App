@@ -16,7 +16,7 @@
 
 1. User Authentication: Firebase Authentication SDK is integrated into the app to handle user authentication processes securely. Swift code manages user sign-up, login, and password management within the app.
 
-2. Database Interaction: Firebase Realtime Database or Firestore is utilized to store and retrieve user data, including workout logs, fitness goals, and community interactions.
+2. Database Interaction: Firebase Firestore is utilized to store and retrieve user data, including workout logs, fitness goals, and community interactions.
 
 3. Data Visualization: SwiftUICharts is used to generate graphical interpretations of data. Swift code is responsible for retrieving data from Firebase and rendering it in a visually appealing manner.
 
