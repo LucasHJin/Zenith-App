@@ -120,7 +120,7 @@ struct ExerciseGraph: View {
             ZStack {
                 
                 Chart {
-                    ForEach (ProfileVM.dataPoints) { point in
+                    ForEach (ProfileVM.dataPoints.reversed()) { point in
                         LineMark(x: PlottableValue.value("Date", point.date),
                                  y: PlottableValue.value("1 Rep Max", point.RM))
                         
