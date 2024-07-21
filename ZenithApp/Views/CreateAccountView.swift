@@ -34,7 +34,7 @@ struct CreateAccountView: View {
                     VStack{
                         TextField("Name", text: $CreateAccountVM.name)
                             .frame(width: 300, height: 50)
-                            .background(Color.white.opacity(1))
+                            .background(Color.white.opacity(0.75))
                             .cornerRadius(10)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
@@ -44,7 +44,7 @@ struct CreateAccountView: View {
                         
                         TextField("Email Address", text: $CreateAccountVM.email)
                             .frame(width: 300, height: 50)
-                            .background(Color.white.opacity(1))
+                            .background(Color.white.opacity(0.75))
                             .cornerRadius(10)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
@@ -54,7 +54,7 @@ struct CreateAccountView: View {
 
                         SecureField("Password", text: $CreateAccountVM.password)
                             .frame(width: 300, height: 50)
-                            .background(Color.white.opacity(1))
+                            .background(Color.white.opacity(0.75))
                             .cornerRadius(10)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)

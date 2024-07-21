@@ -34,7 +34,7 @@ struct TrackerView: View {
                     .frame(width: 500, height: 220)
                     .foregroundColor(Color("Colour2"))
                     .cornerRadius(10)
-                    .offset(y: -365)
+                    .offset(y: -400)
                 
                 VStack {
                     HStack {
