@@ -1,4 +1,9 @@
-# Zenith Workout App
+<div align="center">
+	<h1>Zenith Workout App</h1>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</div>
+
 
 ### Welcome to Zenith! This iOS application is designed to help users track their fitness goals and maintain a healthy lifestyle and will be constantly updated with new features. Currently, the supported functionalities are listed below but more functionalities such as social features will be added in the future.
 
