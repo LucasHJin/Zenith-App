@@ -26,6 +26,9 @@ git clone https://github.com/LucasHJin/Zenith-App
 4. Install any necessary dependencies via Swift Package Manager.
 5. Build and run the app on a simulator or physical iOS device.
 
+## Known Bugs
+- Currently, only **light mode** is supported and attempts to use dark mode may result in unforseen visual irritations
+
 ## Contact Information
 In case of any errors or bugs, please contact:
 - **kblazer20@gmail.com**

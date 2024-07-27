@@ -77,6 +77,7 @@ struct TrackerView: View {
                                     .font(.title)
                             }
                             
+                            
                             Button {
                                 //logic to make date go forward by one day
                                 self.currentDate = Calendar.current.date(byAdding: .day, value: 1, to: self.currentDate) ?? self.currentDate

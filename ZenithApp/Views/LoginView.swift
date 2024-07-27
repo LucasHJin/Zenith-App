@@ -42,7 +42,7 @@ struct LoginView: View {
                         }
                         TextField("Email Address", text: $LoginVM.email)
                             .frame(width: 300, height: 50)
-                            .background(Color.white.opacity(0.75))
+                            .background(Color.white.opacity(1))
                             .cornerRadius(10)
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
@@ -53,7 +53,7 @@ struct LoginView: View {
 
                         SecureField("Password", text: $LoginVM.password)
                             .frame(width: 300, height: 50)
-                            .background(Color.white.opacity(0.75))
+                            .background(Color.white.opacity(1))
                             .cornerRadius(10)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
