@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TrackerView: View {
     @StateObject var TrackerVM = TrackerViewViewModel()
+    @StateObject var healthKitManager = HealthKitManager.shared
 
     @State var searchText = "" //creating a variable to see what the user is typing
     @State private var currentDate = Date()
@@ -38,41 +39,83 @@ struct TrackerView: View {
                 
                 VStack {
                     HStack {
-                        Button {
-                            //logic to make date go back by one day
-                            self.currentDate = Calendar.current.date(byAdding: .day, value: -1, to: self.currentDate) ?? self.currentDate
-                            TrackerVM.fetchExercises(date: currentDate)
-                            print(TrackerVM.exercises)
-                        } label: {
-                            Image(systemName: "arrowtriangle.backward.fill")
-                                .foregroundColor(.white)
-                                .scaleEffect(1.5)
-                                .padding(5)
-                        }
-                        
-                        Button {
-                            //logic
-                            self.isDatePickerVisible.toggle()
-                        } label: {
+                        HStack {
+                            Image(systemName: "figure.walk.circle.fill")
+                                .foregroundColor(.orange)
+                                .padding(0)
+                                .font(.system(size: 14))
                             
-                            Text("\(currentDate, formatter: dateFormatter)") //https://www.hackingwithswift.com/books/ios-swiftui/working-with-dates
-                                .foregroundColor(.white)
-                                .font(.title)
+                            Text("\(healthKitManager.stepCountToday)") //display step count next to the image
+                                .padding(.leading, -6)
+                                .foregroundColor(.red)
+                                .font(.system(size: 14))
                         }
+                        .padding(.leading, 50)
                         
-                        Button {
-                            //logic to make date go forward by one day
-                            self.currentDate = Calendar.current.date(byAdding: .day, value: 1, to: self.currentDate) ?? self.currentDate
-                            TrackerVM.fetchExercises(date: currentDate)
-                            print(TrackerVM.exercises)
-                        } label: {
-                            Image(systemName: "arrowtriangle.forward.fill")
-                                .foregroundColor(.white)
-                                .scaleEffect(1.5)
-                                .padding(5)
+
+                        
+                        HStack {
+                            Button {
+                                //logic to make date go back by one day
+                                self.currentDate = Calendar.current.date(byAdding: .day, value: -1, to: self.currentDate) ?? self.currentDate
+                                TrackerVM.fetchExercises(date: currentDate)
+                                print(TrackerVM.exercises)
+                            } label: {
+                                Image(systemName: "arrowtriangle.backward.fill")
+                                    .foregroundColor(.white)
+                                    .scaleEffect(1.5)
+                                    .padding(5)
+                            }
+                            
+                            Button {
+                                //logic
+                                self.isDatePickerVisible.toggle()
+                            } label: {
+                                
+                                Text("\(currentDate, formatter: dateFormatter)") //https://www.hackingwithswift.com/books/ios-swiftui/working-with-dates
+                                    .foregroundColor(.white)
+                                    .font(.title)
+                            }
+                            
+                            Button {
+                                //logic to make date go forward by one day
+                                self.currentDate = Calendar.current.date(byAdding: .day, value: 1, to: self.currentDate) ?? self.currentDate
+                                TrackerVM.fetchExercises(date: currentDate)
+                                print(TrackerVM.exercises)
+                            } label: {
+                                Image(systemName: "arrowtriangle.forward.fill")
+                                    .foregroundColor(.white)
+                                    .scaleEffect(1.5)
+                                    .padding(5)
+                            }
                         }
+                        .frame(maxWidth: .infinity)
+                    
+                        
+                        
+                        HStack {
+                            Text("\(healthKitManager.caloriesBurnedToday)") //display step count next to the image
+                                .padding(.trailing, -6)
+                                .foregroundColor(.red)
+                                .font(.system(size: 14))
+                            
+                            Image(systemName: "flame.circle.fill")
+                                .foregroundColor(.orange)
+                                .padding(0)
+                                .font(.system(size: 14))
+                            
+                        }
+                        .padding(.trailing, 50)
+                        
                         
                     }
+                    .onAppear { //fetch values when view appears
+                        healthKitManager.readStepCountToday()
+                        healthKitManager.readCaloriesBurnedToday()
+                    }
+                    .padding(.horizontal)
+                    
+                    
                     
                     HStack {
                         Text("Track your workout")

@@ -55,6 +55,7 @@
 		D85C9BF22B804EFE00D29F67 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85C9BF12B804EFE00D29F67 /* Extensions.swift */; };
 		D864EC3E2B83C1590075F075 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = D864EC3D2B83C1590075F075 /* SwiftUICharts */; };
 		D864EC402B83CD730075F075 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864EC3F2B83CD730075F075 /* DataPoint.swift */; };
+		D8942B992C5467DE001D0CD1 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8942B982C5467DE001D0CD1 /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,9 @@
 		D85C9BEF2B804EF000D29F67 /* TrackedExcercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedExcercise.swift; sourceTree = "<group>"; };
 		D85C9BF12B804EFE00D29F67 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D864EC3F2B83CD730075F075 /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
+		D8942B962C5466C7001D0CD1 /* ZenithApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZenithApp.entitlements; sourceTree = "<group>"; };
+		D8942B972C546731001D0CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D8942B982C5467DE001D0CD1 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 		D85C9B8F2B804B8F00D29F67 /* ZenithApp */ = {
 			isa = PBXGroup;
 			children = (
+				D8942B972C546731001D0CD1 /* Info.plist */,
+				D8942B962C5466C7001D0CD1 /* ZenithApp.entitlements */,
 				D85C9B9E2B804C6D00D29F67 /* GoogleService-Info.plist */,
 				D85C9BF62B804F3600D29F67 /* Other */,
 				D85C9BF32B804F0500D29F67 /* ModelStructures */,
@@ -163,6 +169,7 @@
 				D85C9BED2B804EE600D29F67 /* User.swift */,
 				D85C9BEF2B804EF000D29F67 /* TrackedExcercise.swift */,
 				D864EC3F2B83CD730075F075 /* DataPoint.swift */,
+				D8942B982C5467DE001D0CD1 /* HealthKitManager.swift */,
 			);
 			path = ModelStructures;
 			sourceTree = "<group>";
@@ -316,6 +323,7 @@
 				D85C9BE02B804E3300D29F67 /* TrackerView.swift in Sources */,
 				D85C9BEE2B804EE600D29F67 /* User.swift in Sources */,
 				D85C9BDC2B804E1C00D29F67 /* ProfileView.swift in Sources */,
+				D8942B992C5467DE001D0CD1 /* HealthKitManager.swift in Sources */,
 				D85C9BE42B804E9C00D29F67 /* LoginViewViewModel.swift in Sources */,
 				D85C9BDA2B804E1200D29F67 /* CreateAccountView.swift in Sources */,
 				D85C9BE82B804EBC00D29F67 /* ProfileViewViewModel.swift in Sources */,
@@ -455,12 +463,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZenithApp/ZenithApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ZenithApp/Preview Content\"";
 				DEVELOPMENT_TEAM = YSNY5CHX8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZenithApp/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To read health data and show it in the application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,12 +494,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZenithApp/ZenithApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ZenithApp/Preview Content\"";
 				DEVELOPMENT_TEAM = YSNY5CHX8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZenithApp/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To read health data and show it in the application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
