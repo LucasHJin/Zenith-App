@@ -16,6 +16,19 @@
 
 4. **Progress Tracking:** Users can monitor their progress over time within the app. Visual representations of progress are displayed with graphs.
 
+5. **Realtime Data:** With the use of the HealthKit API, users are able to see the amount of calories burned and steps taken at any point throughout the day.
+
+## Sample Images of the Functionalities
+<p align="center">
+  <img src="README_assets/Login_page.PNG" style="width: 28%; height: auto; margin: 7px"/>
+  <img src="README_assets/Exercise_Tracking.PNG" style="width: 28%; height: auto; margin: 7px"/>
+  <img src="README_assets/Tracked_Excercises_List_and_Delete_Button.PNG" style="width: 28%; height: auto; margin: 7px"/>
+  <img src="README_assets/Exercise_Tutorial.PNG" style="width: 28%; height: auto; margin: 7px"/>
+  <img src="README_assets/Exercise_Tracked_Message.PNG" style="width: 28%; height: auto; margin: 7px"/>
+  <img src="README_assets/Exercise_Graph.PNG" style="width: 28%; height: auto; margin: 7px"/>
+</p>
+
+
 ## Installation and Running
 1. Clone this repository to your local machine.
 ```bash
