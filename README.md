@@ -20,7 +20,7 @@
 
 ## Sample Images of the Functionalities
 <p align="center">
-  <img src="README_assets/Login_page.PNG" style="width: 28%; height: auto; margin: 7px"/>
+  <img src="README_assets/Login_Page.PNG" style="width: 28%; height: auto; margin: 7px"/>
   <img src="README_assets/Exercise_Tracking.PNG" style="width: 28%; height: auto; margin: 7px"/>
   <img src="README_assets/Tracked_Excercises_List_and_Delete_Button.PNG" style="width: 28%; height: auto; margin: 7px"/>
   <img src="README_assets/Exercise_Tutorial.PNG" style="width: 28%; height: auto; margin: 7px"/>
